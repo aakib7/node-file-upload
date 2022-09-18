@@ -15,7 +15,7 @@ const upload = multer({
 
 app.post("/post", upload, async (req, res) => {
   console.log(req.file);
-  return res.send("Uploaded");
+  return res.send("File Uploaded");
 });
 
 app.listen(4000);
